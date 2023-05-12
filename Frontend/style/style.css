@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+.logo {
+    width: 500px;
+    height: 100px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.titulo-field {
+    text-align: center;
+}
+
+fieldset {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+}
+
+.pergunta {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+}
+
+.pergunta input, select {
+    width: 90%;
+    margin: .5rem 0 0 1rem;
+    padding: .1rem .4rem;
+}
+
+.pergunta select {
+    border: none;
+}
+
+.generos {
+    display: flex;
+    padding: .5rem;
+}
+
+.proximo-btn {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -0.6rem;
+}
+
+.proximo-btn input {
+    padding: .3rem .5rem;
+}
+
+.span-index {
+    width: 100%;
+    padding: .5rem 0;
+    padding-left: 1rem;
+}
+
+
+#dados-socioeconomico {
+    display: none;
+}

@@ -1,0 +1,28 @@
+    1. Demográficas / Socioeconômico:
+        ◦ Qual é a faixa etária do consumidor?
+        ◦ Qual é o gênero predominante?
+        ◦ Em qual região geográfica o consumidor está localizado?
+        ◦ Qual é o nível de escolaridade do consumidor?
+        ◦ Qual é a faixa Salarial ? 
+        ◦ Qual a sua profissão ?
+        ◦ Qual a sua situação de trabalho atual ?
+        ◦ Quantas vezes na semana abastece?
+        ◦ Qual dia da semana abastece?
+    2. Comportamentais:
+        ◦ Com que frequência o consumidor abastece seu veículo?
+        ◦ Quais são os principais locais onde o consumidor costuma abastecer?
+        ◦ O consumidor utiliza algum tipo de combustível específico, como gasolina, etanol, diesel ou GNV?
+        ◦ O consumidor costuma realizar a manutenção preventiva do veículo?
+    3. Psicográficas:
+        ◦ O consumidor está preocupado com questões ambientais e busca opções mais sustentáveis de combustível?
+        ◦ O consumidor valoriza a economia de combustível e procura por opções mais eficientes?
+        ◦ O consumidor tem preferência por alguma marca de combustível em particular?
+        ◦ O consumidor está disposto a pagar mais por um combustível de maior qualidade?
+    4. Tecnológicas:
+        ◦ O consumidor utiliza aplicativos ou plataformas online para localizar postos de combustível ou comparar preços?
+        ◦ O consumidor utiliza cartões de fidelidade ou programas de recompensa oferecidos por postos de combustível?
+        ◦ O consumidor está interessado em novas tecnologias de propulsão, como veículos elétricos ou híbridos?
+    5. Experiência anterior:
+        ◦ O consumidor já teve experiências negativas com a qualidade do combustível fornecido por algum posto específico?
+        ◦ O consumidor considera importante o atendimento ao cliente por parte dos postos de combustível?
+        ◦ O consumidor já teve problemas com adulteração de combustível?

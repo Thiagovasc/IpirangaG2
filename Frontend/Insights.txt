@@ -1,0 +1,20 @@
+
+    1. Segmentação demográfica:
+        ◦ Identificar as faixas etárias predominantes dos consumidores de combustível.
+        ◦ Compreender se há alguma diferença de consumo entre gêneros.
+        ◦ Analisar se há variações geográficas no consumo de combustível.
+        ◦ Identificar se o nível de escolaridade influência nas preferências de consumo.
+    2. Comportamento de compra:
+        ◦ Entender a frequência com que os consumidores abastecem seus veículos, ajudando a determinar a demanda de combustível.
+        ◦ Identificar os locais preferidos pelos consumidores para abastecer, possibilitando parcerias estratégicas com postos de combustível ou localizações específicas para construção de novos postos.
+        ◦ Avaliar se há preferência por tipos específicos de combustível (gasolina, etanol, diesel, GNV), auxiliando no planejamento do estoque de diferentes tipos de combustível.
+    3. Preferências e motivações:
+        ◦ Compreender se os consumidores estão preocupados com questões ambientais e se há demanda por opções mais sustentáveis de combustível.
+        ◦ Identificar se a economia de combustível é um fator importante para os consumidores, possibilitando a oferta de produtos ou serviços relacionados à eficiência energética.
+        ◦ Avaliar se a marca do combustível influencia as escolhas dos consumidores, permitindo a criação de estratégias de branding e parcerias com marcas reconhecidas.
+    4. Utilização de tecnologia:
+        ◦ Identificar as plataformas digitais mais utilizadas pelos consumidores para localizar postos de combustível ou comparar preços, permitindo a otimização dos canais de divulgação e venda.
+        ◦ Compreender se os consumidores estão abertos a novas tecnologias de propulsão, como veículos elétricos ou híbridos, fornecendo insights para a diversificação de produtos ou serviços oferecidos.
+    5. Experiência anterior:
+        ◦ Identificar possíveis problemas relacionados à qualidade do combustível fornecido por postos específicos, permitindo melhorias na qualidade e reputação dos postos de combustível.
+        ◦ Avaliar a importância do atendimento ao cliente e da satisfação geral dos consumidores, fornecendo diretrizes para aprimorar o serviço prestado pelos postos de combustível.
