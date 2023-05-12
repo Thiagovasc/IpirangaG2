@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Ipiranga</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
+
+</head>
+<body>
+    <form id="pesquisa-form" action="">
+       
+        <fieldset id="dados-pessoais">
+            <h2 class="titulo-field">Dados Pessoais</h2>
+            <div class="pergunta">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="pergunta">
+                <label for="sobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="pergunta">
+                <label for="genero">Gênero:</label>
+                <select name="genero" id="genero-select" required>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+            </div>
+              
+
+            <div class="pergunta">
+                <label for="idade">Data de nascimento:</label>
+                <input type="date" name="idade" id="idade" required>
+            </div>
+
+            <div class="proximo-btn">
+                <input type="button" value="Próximo" class="next-btn">
+            </div>
+            
+
+        </fieldset>
+
+
+        <fieldset id="dados-socioeconomico">
+            <h2 class="titulo-field">Socioeconômico</h2>
+            <div class="pergunta">
+                <label for="regiao">Região:</label>
+                <select id="estado" name="estado" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <label for="faixa-salaria">Faixa salarial:</label>
+                <input type="number" min="1320" placeholder="R$: 1320" required>
+            </div>
+
+            <div class="pergunta">
+                <label for="nivel-escolaridade">Nivel de escolaridade:</label>
+                <select name="escolaridade" id="escolaridade">
+                    <option value="superior-completo">Superior completo</option>
+                    <option value="superior-incompleto">Superior incompleto</option>
+                    <option value="medio-completo">Médio completo</option>
+                    <option value="medio-incompleto">Médio incompleto</option>
+                    <option value="fundamental-completo">Fundamental completo</option>
+                    <option value="fundamental-incompleto">Fundamental incompleto</option>
+                    <option value="le-e-escreve">Lê e escreve</option>
+                    <option value="analfabetos">Analfabetos</option>
+                </select>
+            </div>
+
+
+            <div class="proximo-btn">
+                <input type="button" value="Próximo" class="next-btn">
+            </div>
+
+
+        </fieldset>
+
+        <div class="span-index">
+            <span class="fieldsetAtualFront"></span>
+            <span class="fiedsetLenFront"></span>  
+        </div>
+
+    </form>
+
+</body>
+</html>
