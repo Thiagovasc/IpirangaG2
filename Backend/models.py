@@ -15,16 +15,16 @@ class Genero(str, Enum):
 class NivelEscolaridade(str, Enum):
     superior_completo = "superior-completo"
     superior_incompleto = "superior-incompleto"
-    ensino_medio_completo = "ensino-medio-completo"
-    ensino_medio_incompleto = "ensino-medio-incompleto"
+    ensino_medio_completo = "medio-completo"
+    ensino_medio_incompleto = "medio-incompleto"
     fundamental_incompleto = "fundamental-completo"
     analfabeto = "analfabeto"
 
 
 class SituacaoEmpregaticia(str, Enum):
-    empregado = "empregado"
-    autonomo = "autonomo"
-    desempregado = "desempregado"
+    empregado = "Empregado"
+    autonomo = "Autonomo"
+    desempregado = "Desempregado"
 
 
 

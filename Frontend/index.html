@@ -126,20 +126,20 @@
             </div>
             <div class="pergunta">
                 <label for="situacao-trabalho">Qual é a sua situação de trabalho atual?</label>
-                <select name="situacao-trabalho" id="situacao-trabalho" required>
+                <select name="situacao_trabalho" id="situacao-trabalho" required>
                     <option value="" disabled selected hidden>Selecione uma opção</option>
                     <option value="Empregado">Empregado</option>
                     <option value="Desempregado">Desempregado</option>
-                    <option value="autonomo">Autônomo</option>
+                    <option value="Autonomo">Autônomo</option>
                 </select>
             </div>
             <div class="pergunta">
                 <label for="frequencia-abastecimento">Abastece quantas vezes na semana?</label>
-                <input type="number" name="frequencia-abastecimento" id="frequencia-abastecimento" required>
+                <input type="number" name="frequencia_abastecimento" id="frequencia-abastecimento" required>
             </div>
             <div class="pergunta">
                 <label for="dia-abastecimento">Qual dia da semana abastece?</label>
-                <select name="dia-abastecimento" id="dia-abastecimento" required>
+                <select name="dia_abastecimento" id="dia-abastecimento" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="Segunda">Segunda</option>
                     <option value="Terca">Terça</option>
@@ -165,7 +165,7 @@
 
             <div class="pergunta">
                 <label for="locais-abastecimento">Qual o local você costuma abastecer?</label>
-                <select name="locais-abastecimento" id="locais-abastecimento">
+                <select name="locais_abastecimento" id="locais-abastecimento">
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="proximo-de-casa">Próximo de casa</option>
                     <option value="proximo-ao-trabalh">Próximo ao trabalho</option>
@@ -176,7 +176,7 @@
 
             <div class="pergunta">
                 <label for="tipo-combustivel">O consumidor utiliza algum tipo de combustível específico?</label>
-                <select name="tipo-combustivel" id="tipo-combustivel">
+                <select name="tipo_combustivel" id="tipo-combustivel">
                     <option value="Gasolina">Gasolina</option>
                     <option value="Etanol">Etanol</option>
                     <option value="Diesel">Diesel</option>
@@ -186,7 +186,7 @@
                 </div>
                 <div class="pergunta">
                 <label for="manutencao-preventiva">O consumidor costuma realizar a manutenção preventiva do veículo?</label>
-                <select name="manutencao-preventiva" id="manutencao-preventiva" required>
+                <select name="manutencao_preventiva" id="manutencao-preventiva" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
@@ -205,7 +205,7 @@
             <h2 class="titulo-field">Psicográficas</h2>
             <div class="pergunta">
                 <label for="preocupacao-ambiental">O consumidor está preocupado com questões ambientais e busca opções mais sustentáveis de combustível?</label>
-                <select name="preocupacao-ambiental" id="preocupacao-ambiental" required>
+                <select name="preocupacao_ambiental" id="preocupacao-ambiental" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
@@ -213,7 +213,7 @@
             </div>
             <div class="pergunta">
                 <label for="valorizacao-economia-combustivel">O consumidor valoriza a economia de combustível e procura por opções mais eficientes?</label>
-                <select name="valorizacao-economia-combustivel" id="economia-combustivel" required>
+                <select name="valorizacao_economia_combustivel" id="economia-combustivel" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="sim">Sim, busco o mais eficiente</option>
                     <option value="nao">Não, busco o mais barato</option>
@@ -221,7 +221,7 @@
             </div>
             <div class="pergunta">
                 <label for="preferencia-marca-combustivel">O consumidor tem preferência por alguma marca de combustível em particular?</label>
-                <select name="preferencia-marca-combustivel" id="marca-combustivel">
+                <select name="preferencia_marca_combustivel" id="marca-combustivel">
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
                 </select>
@@ -242,7 +242,7 @@
 
             <div class="pergunta">
                 <label for="pagamento-combustivel-qualidade">O consumidor está disposto a pagar mais por um combustível de maior qualidade?</label>
-                <select name="pagamento-combustivel-qualidade" id="combustivel-qualidade" required>
+                <select name="pagamento_combustivel_qualidade" id="combustivel-qualidade" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
@@ -261,7 +261,7 @@
             <h2 class="titulo-field">Tecnológicas</h2>
             <div class="pergunta">
                 <label for="utilizacao-aplicativos">O consumidor utiliza aplicativos ou plataformas online para localizar postos de combustível ou comparar preços?</label>
-                <select name="utilizacao-aplicativos" id="utilizacao-aplicativos" required>
+                <select name="utilizacao_aplicativos" id="utilizacao-aplicativos" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
@@ -269,7 +269,7 @@
             </div>
             <div class="pergunta">
                 <label for="utilizacao-cartoes-fidelidade">O consumidor utiliza cartões de fidelidade ou programas de recompensa oferecidos por postos de combustível?</label>
-               <select name="utilizacao-cartoes-fidelidade" id="cartoes-fidelidade" required>
+               <select name="utilizacao_cartoes_fidelidade" id="cartoes-fidelidade" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
@@ -277,7 +277,7 @@
             </div>
             <div class="pergunta">
                 <label for="interesse-tecnologias-propulsao">O consumidor está interessado em novas tecnologias de propulsão, como veículos elétricos ou híbridos?</label>
-                <select name="interesse-tecnologias-propulsao" id="tecnologias-propulsao" required>
+                <select name="interesse_tecnologias_propulsao" id="tecnologias-propulsao" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>

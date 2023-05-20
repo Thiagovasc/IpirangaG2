@@ -1,4 +1,4 @@
-const submitBtn = document.querySelector(".submit-btn")
+const submitBtn = document.querySelector(".submit-btn");
 
 submitBtn.addEventListener('click', () => {
     const formData = new FormData(form);
@@ -8,7 +8,8 @@ submitBtn.addEventListener('click', () => {
     });
     const json = JSON.stringify(object);
     console.log(json)
-    fetch('https://localhost:8000/novo', {
+
+    fetch('http://localhost:8000/novo', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,5 +24,6 @@ submitBtn.addEventListener('click', () => {
     .catch(error => {
         console.error('API request failed:', error);
         // Handle the error
-    })
-})
+    });
+});
+
