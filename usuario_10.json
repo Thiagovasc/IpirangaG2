@@ -1,0 +1,22 @@
+{
+    "nome": "Benicio",
+    "sobrenome": "Pereira",
+    "genero": "Masculino",
+    "idade": 38,
+    "estado": "Goias",
+    "escolaridade": "superior-completo",
+    "profissao": "Encarregado de manutencao predial",
+    "situacao_trabalho": "Autonomo",
+    "frequencia_abastecimento": 4,
+    "dia_abastecimento": "Terca",
+    "locais_abastecimento": "mais-barato",
+    "tipo_combustivel": "Diesel",
+    "manutencao_preventiva": "nao",
+    "preocupacao_ambiental": "nao",
+    "valorizacao_economia_combustivel": "sim",
+    "preferencia_marca_combustivel": "Petrobras",
+    "pagamento_combustivel_qualidade": "nao",
+    "utilizacao_aplicativos": "sim",
+    "utilizacao_cartoes_fidelidade": "sim",
+    "interesse_tecnologias_propulsao": "sim"
+}

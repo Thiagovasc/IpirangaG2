@@ -1,0 +1,22 @@
+{
+    "nome": "Yuri",
+    "sobrenome": "Novaes",
+    "genero": "Masculino",
+    "idade": 44,
+    "estado": "Mato Grosso",
+    "escolaridade": "analfabeto",
+    "profissao": "Museologo",
+    "situacao_trabalho": "Empregado",
+    "frequencia_abastecimento": 1,
+    "dia_abastecimento": "Quarta",
+    "locais_abastecimento": "mais-barato",
+    "tipo_combustivel": "Etanol",
+    "manutencao_preventiva": "nao",
+    "preocupacao_ambiental": "sim",
+    "valorizacao_economia_combustivel": "sim",
+    "preferencia_marca_combustivel": "Shell",
+    "pagamento_combustivel_qualidade": "sim",
+    "utilizacao_aplicativos": "nao",
+    "utilizacao_cartoes_fidelidade": "nao",
+    "interesse_tecnologias_propulsao": "nao"
+}

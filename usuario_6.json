@@ -1,0 +1,22 @@
+{
+    "nome": "Ana Julia",
+    "sobrenome": "Martins",
+    "genero": "Feminino",
+    "idade": 42,
+    "estado": "Rondonia",
+    "escolaridade": "medio-completo",
+    "profissao": "Microfonista",
+    "situacao_trabalho": "Desempregado",
+    "frequencia_abastecimento": 3,
+    "dia_abastecimento": "Quinta",
+    "locais_abastecimento": "proximo-ao-trabalho",
+    "tipo_combustivel": "Etanol",
+    "manutencao_preventiva": "nao",
+    "preocupacao_ambiental": "nao",
+    "valorizacao_economia_combustivel": "nao",
+    "preferencia_marca_combustivel": "Shell",
+    "pagamento_combustivel_qualidade": "sim",
+    "utilizacao_aplicativos": "nao",
+    "utilizacao_cartoes_fidelidade": "sim",
+    "interesse_tecnologias_propulsao": "sim"
+}

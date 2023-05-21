@@ -1,0 +1,22 @@
+{
+    "nome": "Francisco",
+    "sobrenome": "Porto",
+    "genero": "Masculino",
+    "idade": 29,
+    "estado": "Rio Grande do Norte",
+    "escolaridade": "medio-completo",
+    "profissao": "Arranjador musical",
+    "situacao_trabalho": "Desempregado",
+    "frequencia_abastecimento": 3,
+    "dia_abastecimento": "Sexta",
+    "locais_abastecimento": "mais-barato",
+    "tipo_combustivel": "Gasolina",
+    "manutencao_preventiva": "nao",
+    "preocupacao_ambiental": "sim",
+    "valorizacao_economia_combustivel": "nao",
+    "preferencia_marca_combustivel": "Petrobras",
+    "pagamento_combustivel_qualidade": "nao",
+    "utilizacao_aplicativos": "nao",
+    "utilizacao_cartoes_fidelidade": "sim",
+    "interesse_tecnologias_propulsao": "sim"
+}
