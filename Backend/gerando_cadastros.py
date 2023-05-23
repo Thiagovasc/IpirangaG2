@@ -69,5 +69,4 @@ def AdicionarDados(n):
     except requests.exceptions.RequestException as error:
         print("Request falhou:", error)
 
-
-AdicionarDados(5)
+AdicionarDados(300)

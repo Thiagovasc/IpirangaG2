@@ -12,9 +12,10 @@
 </head>
 <body>
     <form id="pesquisa-form" action="">
-       
+        
+        <img src="imagens/posto-ipiranga.png" alt="">
+        <h2 class="titulo-field">Novo Cadastro</h2>
         <fieldset id="dados-pessoais">
-            <h2 class="titulo-field">Dados Pessoais</h2>
             <div class="pergunta">
                 <label for="nome">Nome: </label>
                 <input type="text" name="nome" id="nome" required>
@@ -36,7 +37,7 @@
               
 
             <div class="pergunta">
-                <label for="idade">Data de nascimento:</label>
+                <label for="idade">Idade:</label>
                 <input type="number" name="idade" id="idade" required>
             </div>
 
@@ -49,9 +50,8 @@
         </fieldset>
 
         <fieldset id="dados-socioeconomico">
-            <h2 class="titulo-field">Socioeconômico</h2>
             <div class="pergunta">
-                <label for="regiao">Região:</label>
+                <label for="estado">Estado:</label>
                 <select id="estado" name="estado" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="AC">Acre</option>
@@ -121,7 +121,6 @@
         </fieldset>
 
         <fieldset id="demograficas-socioeconomico">
-            <h2 class="titulo-field">Demográficas</h2>
 
             <div class="pergunta">
                 <label for="profissao">Qual é a sua profissão?</label>
@@ -164,8 +163,6 @@
         </fieldset>
         
         <fieldset id="comportamentais">
-            <h2 class="titulo-field">Comportamentais</h2>
-
             <div class="pergunta">
                 <label for="locais-abastecimento">Qual o local você costuma abastecer?</label>
                 <select name="locais_abastecimento" id="locais-abastecimento">
@@ -206,7 +203,6 @@
         </fieldset>
 
         <fieldset id="psicograficas">
-            <h2 class="titulo-field">Psicográficas</h2>
             <div class="pergunta">
                 <label for="preocupacao-ambiental">O consumidor está preocupado com questões ambientais e busca opções mais sustentáveis de combustível?</label>
                 <select name="preocupacao_ambiental" id="preocupacao-ambiental" required>
@@ -263,7 +259,6 @@
         </fieldset>
 
         <fieldset id="tecnologicas">
-            <h2 class="titulo-field">Tecnológicas</h2>
             <div class="pergunta">
                 <label for="utilizacao-aplicativos">O consumidor utiliza aplicativos ou plataformas online para localizar postos de combustível ou comparar preços?</label>
                 <select name="utilizacao_aplicativos" id="utilizacao-aplicativos" required>
