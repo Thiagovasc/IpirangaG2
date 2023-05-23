@@ -19,11 +19,10 @@ submitBtn.addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
         console.log('API response:', data);
-        // Process the API response as needed
+    }).then(() => {
+        limpandoForm()
     })
     .catch(error => {
         console.error('API request failed:', error);
-        // Handle the error
     });
 });
-

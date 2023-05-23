@@ -53,6 +53,7 @@
             <div class="pergunta">
                 <label for="regiao">Região:</label>
                 <select id="estado" name="estado" required>
+                    <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
                     <option value="AP">Amapá</option>
@@ -87,6 +88,7 @@
             <div class="pergunta">
                 <label for="faixa-salarial">Faixa salarial:</label>
                 <select name="faixa-salarial" id="faixa-salarial">
+                    <option value="" disabled="disabled" selected="true" hidden>Selecione uma opção</option> 
                     <option value="ate-1-salario">Até 1 salário</option>
                     <option value="entre-1-e-2">Acima de 1, até 2 salários</option>
                     <option value="entre-2-e-3">Acima de 2, até 3 salários </option>
@@ -96,9 +98,10 @@
             </div>
 
             <div class="pergunta">
-                <label for="nivel-escolaridade">Nivel de escolaridade:</label>
+                <label for="escolaridade">Nivel de escolaridade:</label>
                 <select name="escolaridade" id="escolaridade">
-                    <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>                    <option value="superior-completo">Superior completo</option>
+                    <option value="" disabled="disabled" selected="true" hidden>Selecione uma opção</option>                  
+                    <option value="superior-completo">Superior completo</option>
                     <option value="superior-incompleto">Superior incompleto</option>
                     <option value="medio-completo">Médio completo</option>
                     <option value="medio-incompleto">Médio incompleto</option>
@@ -177,6 +180,7 @@
             <div class="pergunta">
                 <label for="tipo-combustivel">O consumidor utiliza algum tipo de combustível específico?</label>
                 <select name="tipo_combustivel" id="tipo-combustivel">
+                    <option value="" disabled="disabled" selected="true" hidden>Selecione uma opção</option> 
                     <option value="Gasolina">Gasolina</option>
                     <option value="Etanol">Etanol</option>
                     <option value="Diesel">Diesel</option>
@@ -222,6 +226,7 @@
             <div class="pergunta">
                 <label for="preferencia-marca-combustivel">O consumidor tem preferência por alguma marca de combustível em particular?</label>
                 <select name="preferencia_marca_combustivel" id="marca-combustivel">
+                    <option value="" disabled="disabled" selected="true" hidden>Selecione uma opção</option> 
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
                 </select>
