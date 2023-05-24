@@ -25,7 +25,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
   width: 600px;
   margin: 0 auto;
   margin-top: 2rem;
@@ -46,7 +46,7 @@ fieldset {
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  min-height: 600px; /* Set a minimum height for fieldsets */
+  min-height: 450px; 
   position: relative; /* Added */
 }
 
@@ -54,7 +54,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: .4rem 1rem;
 }
 
 .pergunta label {
@@ -103,4 +103,25 @@ fieldset {
 
 #dados-socioeconomico {
   display: none;
+}
+
+
+@media (max-width: 420px) {
+  h2 {
+    margin-top: 1rem;
+  }
+  
+  form {
+    width: 340px;
+    padding: 2px;
+  }
+
+  fieldset {
+    padding: 2px;
+    min-height: 520px;
+  }
+
+  .proximo-btn {
+    padding: 2rem 0.5rem;
+  }
 }
