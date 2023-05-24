@@ -13,17 +13,16 @@
 <body>
     <form id="pesquisa-form" action="">
         
-        <img src="imagens/posto-ipiranga.png" alt="">
         <h2 class="titulo-field">Novo Cadastro</h2>
         <fieldset id="dados-pessoais">
             <div class="pergunta">
                 <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" required>
+                <input type="text" placeholder="Ex: João" name="nome" id="nome" required>
             </div>
 
             <div class="pergunta">
                 <label for="sobrenome">Sobrenome: </label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
+                <input type="text" placeholder="Ex: Souza" name="sobrenome" id="sobrenome" required>
             </div>
 
             <div class="pergunta">
@@ -38,7 +37,7 @@
 
             <div class="pergunta">
                 <label for="idade">Idade:</label>
-                <input type="number" name="idade" id="idade" required>
+                <input type="number" min="18" max="50" placeholder="Ex: 20" name="idade" id="idade" required>
             </div>
 
             <div class="proximo-btn">
@@ -124,7 +123,7 @@
 
             <div class="pergunta">
                 <label for="profissao">Qual é a sua profissão?</label>
-                <input type="text" name="profissao" id="profissao" required>
+                <input type="text" placeholder="Ex: Desenvolvedor" name="profissao" id="profissao" required>
             </div>
             <div class="pergunta">
                 <label for="situacao-trabalho">Qual é a sua situação de trabalho atual?</label>
@@ -137,7 +136,7 @@
             </div>
             <div class="pergunta">
                 <label for="frequencia-abastecimento">Abastece quantas vezes na semana?</label>
-                <input type="number" name="frequencia_abastecimento" id="frequencia-abastecimento" required>
+                <input type="number" min="1" max="7" placeholder="Ex: 3" name="frequencia_abastecimento" id="frequencia-abastecimento" required>
             </div>
             <div class="pergunta">
                 <label for="dia-abastecimento">Qual dia da semana abastece?</label>
@@ -227,18 +226,7 @@
                     <option value="nao">Não</option>
                 </select>
             </div>
-            <!-- 
-                <div class="pergunta">
-                    <label for="marca-combustivel">
-                        <select name="marca-combustivel" id="marca-combustivel">
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                    </label>
 
-            -->
             </div>
 
             <div class="pergunta">
