@@ -20,6 +20,8 @@ class NivelEscolaridade(str, Enum):
     analfabeto = "analfabeto"
 
 
+
+
 class SituacaoEmpregaticia(str, Enum):
     empregado = "Empregado"
     autonomo = "Autonomo"
@@ -38,15 +40,27 @@ class DiaDeAbastecimento(str, Enum):
     Conforme_necessidade = "Conforme-necessidade"
 
 
+
+
 class LocalDeAbastecimento(str, Enum):
     Proximo_de_casa = "proximo-de-casa"
     Proximo_ao_trabalho = "proximo-ao-trabalho"
     Mais_barato = "mais-barato"
 
 
+
 class RespostaBooleana(str, Enum):
-    sim = "sim"
-    nao = "nao"
+    Sim = "sim"
+    Nao = "nao"
+
+
+class FaixaSalarial(str, Enum):
+    ATE_1_SALARIO = "ate-1-salario"
+    ENTRE_1_E_2_SALARIOS = "entre-1-e-2"
+    ENTRE_2_E_3_SALARIOS = "entre-2-e-3"
+    ENTRE_3_E_4_SALARIOS = "entre-3-e-4"
+    ACIMA_DE_4_SALARIOS = "acima-de-4"
+
 
 
 class UsuarioCadastrado(BaseModel):
@@ -55,6 +69,7 @@ class UsuarioCadastrado(BaseModel):
     genero: Genero
     idade: int
     estado: str
+    faixa_salarial: FaixaSalarial
     escolaridade: NivelEscolaridade
     profissao: str
     situacao_trabalho: SituacaoEmpregaticia

@@ -30,6 +30,7 @@ def GerandoCadastro():
         genero=genero,  
         idade=fake.random_int(min=18, max=50),
         estado=estado,
+        faixa_salarial=fake.random_element(FaixaSalarial),
         escolaridade=fake.random_element(NivelEscolaridade),
         profissao=profissao,
         situacao_trabalho=fake.random_element(SituacaoEmpregaticia),
@@ -68,5 +69,6 @@ def AdicionarDados(n):
 
     except requests.exceptions.RequestException as error:
         print("Request falhou:", error)
+        print(usuario)
 
-AdicionarDados(300)
+AdicionarDados(2)
