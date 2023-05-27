@@ -25,13 +25,23 @@ submitBtn.addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
         console.log(`Requisição falhou: ${data}`);
-    }).then(() => {
-        limpandoForm()
     })
     .catch(error => {
-        console.error(`Requisição falhou: ${error}`);
-    });
+        
+    }).finally(() => {
+        form.style.display = "none";
+        modal.style.display = "block";
+        modal.setAttribute("id", "cadastros")
+        modalTitulo.innerHTML = "Error";
+        modalMensagem.innerHTML = "Requisição falhou";
+        // Delay the displaying of the initial menu for a few seconds to allow the user to read the error message
+        setTimeout(() => {
+            modal.style.display = "none";
+            menuInicial.style.display = "flex";
+        }, 2000);
+    }); 
 });
+
 
 
 const gerandoCadastros = async (n) => {
@@ -60,7 +70,7 @@ const gerandoCadastros = async (n) => {
       modalTitulo.innerHTML = `Erro: ${error}`;
       modalMensagem.innerHTML = "Requisição falhou";
     } finally {
-      // Delay the hiding of the modal for a few seconds to allow the user to read the "concluded" message
+
       setTimeout(() => {
         modal.style.display = "none";
         containerCadastros.style.display = "flex"
