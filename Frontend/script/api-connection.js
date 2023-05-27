@@ -73,8 +73,10 @@ const gerandoCadastros = async (n) => {
 
       setTimeout(() => {
         modal.style.display = "none";
-        containerCadastros.style.display = "flex"
-      }, 3000);
+        containerCadastros.style.display = "none"
+        menuInicial.style.display = "flex"
+      }, 2000);
+
     }
   };
   
