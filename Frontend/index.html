@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Ipiranga</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css">    
+    <script src="script/menu.js" defer></script>
     <script src="script/script.js" defer></script>
     <script src="script/api-connection.js" defer></script>
-
+    
 </head>
 <body>
-    <form id="pesquisa-form" action="">
+
+    <div class="container-menu">
+        <h1>Menu</h1>
+        <div class="cards-menu">
+            <div class="retornar-form">
+                <h2>Formulário</h2>
+                <button class="open-form">Abrir formulário</button>
+            </div>
+            <div class="cadastros-randomicos">
+                <h2>Cadastros</h2>
+                <button class="cadastros-btn">Gerar cadastros</button>
+            </div>
+        </div>
+
+        <h2>Integrantes</h2>
+        <div class="equipe">
+            <div class="member">
+              <img src="imagens/adehilton-carlos.png" alt="foto de perfil Adehilton Carlos">
+              <h3>Adehilton Carlos</h3>
+            </div>
+            
+            <div class="member">
+              <img src="imagens/erickson-melo.png" alt="foto de perfil Erickson Melo">
+              <h3>Erickson Melo</h3>
+            </div>
+            
+            <div class="member">
+              <img src="imagens/jonatas-alves.png" alt="foto de perfil jonatas alves">
+              <h3>Jonatas Alves</h3>
+            </div>
+
+            <div class="member">
+                <img class="integrante" src="imagens/thiago-vasconcelos.png" alt="foto de perfil Thiago Vasconcelos">
+                <h3>Thiago Vasconcelos</h3>
+              </div>
+              
+              <div class="member">
+                <img src="imagens/wander-andrade.png" alt="foto de perfil Wander Andrade ">
+                <h3>Wander Andrade</h3>
+              </div>
+          </div>
+          
+    </div>
+
+    <div class="container-cadastros">
+        <span class="retornar-menu"><img src="imagens/retorna.png" alt=""></span>
+        <h1>Gerando cadastros randomicos</h1>
+        <p>Selecione a quantidade de cadastros</p>
+        <input type="number" placeholder="Ex: 3" class="numero-cadastros">
+        <button class="requisicao-cadastros">Gerar</button>
+    </div>
+
+    <div class="modal">
+        <div class="modal-conteudo">
+          <h2 id="modal-titulo">Gerando Cadastros</h2>
+          <p id="modal-mensagem">Aguarde...</p>
+        </div>
+    </div>
+    
+    <form  action="" id="pesquisa-form">
         
         <h2 class="titulo-field">Novo Cadastro</h2>
         <fieldset id="dados-pessoais">
@@ -19,7 +79,7 @@
                 <label for="nome">Nome: </label>
                 <input type="text" placeholder="Ex: João" name="nome" id="nome" required>
             </div>
-
+            
             <div class="pergunta">
                 <label for="sobrenome">Sobrenome: </label>
                 <input type="text" placeholder="Ex: Souza" name="sobrenome" id="sobrenome" required>
@@ -285,5 +345,12 @@
         </div>
     </form>
 
+
+      
+
+    <footer>
+        <p>Desenvolvido pela Data Storm</p>
+        <a href="https://github.com/EricksonDS/IpirangaG2" target="_blank"><img src="imagens/github.png" alt="Ícone do github"></a>
+    </footer>
 </body>
 </html>
