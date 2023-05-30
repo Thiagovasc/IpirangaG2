@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Query
-from models import UsuarioCadastrado
+from models import UsuarioCadastrado, Response
 from fastapi.middleware.cors import CORSMiddleware
-from requests import Request
-from gerando_cadastros import GerandoCadastro, AdicionarDados
+from typing import List
+from gerando_cadastros import adiciona_cadastros
 
 app = FastAPI()
 
@@ -14,21 +14,27 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-cadastrados = []
+cadastrados: List[UsuarioCadastrado] = []
 
 @app.get("/")
 def home():
-    return cadastrados if len(cadastrados) != 0 else {"Lista vazia"}
+    return cadastrados if len(cadastrados) != 0 else {"status" : "Lista vazia"}
 
 
 @app.post("/novo")
 def novo_cadastro(novo: UsuarioCadastrado):
     cadastrados.append(novo)
 
-    return cadastrados
+    return Response(
+        status = "OK",
+        code = 200,
+        mensagem = "Cadastro adicionado com sucesso",
+        result = novo
+    )
 
 
 @app.post("/gerar-cadastros")
 def gerar_cadastros(cadastros_request: int = Query(..., ge=1)):
-    AdicionarDados(cadastros_request)
-    return {"message": f"{cadastros_request} cadastros gerados com sucesso."}
+    return adiciona_cadastros(cadastros_request)
+
+

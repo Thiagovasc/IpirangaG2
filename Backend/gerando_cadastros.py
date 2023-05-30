@@ -1,16 +1,16 @@
 from models import *
 from faker import Faker
 from unidecode import unidecode
-import requests 
-import json
+import requests
+from typing import List
 
 fake = Faker("pt_BR")
 
 
-def GerandoCadastro():
+def gerar_cadastros_randomicos():
 
     genero = fake.random_element(Genero)
-    if genero == Genero.Masculino:
+    if genero == Genero.MASCULINO:
         nome = fake.first_name_male()
     else:
         nome = fake.first_name_female()
@@ -51,22 +51,34 @@ def GerandoCadastro():
     return usuario
 
 
-def AdicionarDados(n):
-    if n <= 0:
-        return
+def adiciona_cadastros(n):
+    cadastros_gerados: List[UsuarioCadastrado] = []
+    code: int = 0
+    reason: str = ''
 
-    usuario = GerandoCadastro()
+    for _ in range(n):
+        usuario = gerar_cadastros_randomicos()
+        cadastros_gerados.append(usuario)
 
-    url = "http://localhost:8000/novo"
-    headers = {'Content-Type': 'application/json'}
+        url = "http://localhost:8000/novo"
+        headers = {'Content-Type': 'application/json'}
 
-    try:
-        response = requests.post(url, headers=headers, json=usuario.dict())
-        response.raise_for_status()
-        response_data = response.json()
+        try:
+            response = requests.post(url, headers=headers, json=usuario.dict())
+            code = response.status_code
+            reason = response.reason
 
-        AdicionarDados(n - 1)
 
-    except requests.exceptions.RequestException as error:
-        print("Request falhou:", error)
-        print(usuario)
+        except requests.exceptions.RequestException as error:
+            return Response(
+                status = reason,
+                code = code,
+                mensagem = f"Erro: {error}"
+            )
+
+    return Response(
+        status = reason,
+        code = code,
+        mensagem = f"{n} Cadastros gerados com sucesso",
+        result = cadastros_gerados
+    )
