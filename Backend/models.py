@@ -1,57 +1,57 @@
-from datetime import date
 from enum import Enum
 from pydantic import BaseModel
 from pydantic.generics import GenericModel
 from typing import Optional, Generic, TypeVar
 
-#T = TypeVar['T']
+T = TypeVar('T')
 
 class Genero(str, Enum):
-    Masculino = "Masculino"
-    Feminino = "Feminino"
+    MASCULINO = "Masculino"
+    FEMININO = "Feminino"
 
 
 class NivelEscolaridade(str, Enum):
-    superior_completo = "superior-completo"
-    superior_incompleto = "superior-incompleto"
-    ensino_medio_completo = "medio-completo"
-    ensino_medio_incompleto = "medio-incompleto"
-    fundamental_incompleto = "fundamental-completo"
-    analfabeto = "analfabeto"
+    SUPERIOR_COMPLETO = "superior-completo"
+    SUPERIOR_INCOMPLETO = "superior-incompleto"
+    ENSINO_MEDIO_COMPLETO = "medio-completo"
+    ENSINO_MEDIO_INCOMPLETO = "medio-incompleto"
+    FUNDAMENTAL_COMPLETO = "fundamental-completo"
+    FUNDAMENTAL_INCOMPLETO = "fundamental-incompleto"
+    ANALFABETO = "analfabeto"
 
 
 
 
 class SituacaoEmpregaticia(str, Enum):
-    empregado = "Empregado"
-    autonomo = "Autonomo"
-    desempregado = "Desempregado"
+    EMPREGADO = "Empregado"
+    DESEMPREGADO = "Desempregado"
+    AUTONOMO = "Autonomo"
 
 
 
 class DiaDeAbastecimento(str, Enum):
-    Domingo = "Domingo"
-    Segunda = "Segunda"
-    Terca = "Terca"
-    Quarta = "Quarta"
-    Quinta = "Quinta"
-    Sexta = "Sexta"
-    Sabado = "Sabado"
-    Conforme_necessidade = "Conforme-necessidade"
+    DOMINGO = "Domingo"
+    SEGUNDA = "Segunda"
+    TERCA = "Terca"
+    QUARTA = "Quarta"
+    QUINTA = "Quinta"
+    SEXTA = "Sexta"
+    SABADO = "Sabado"
+    CONFORME_NECESSIDADE = "Conforme-necessidade"
 
 
 
 
 class LocalDeAbastecimento(str, Enum):
-    Proximo_de_casa = "proximo-de-casa"
-    Proximo_ao_trabalho = "proximo-ao-trabalho"
-    Mais_barato = "mais-barato"
+    PROXIMO_DE_CASA = "proximo-de-casa"
+    PROXIMO_AO_TRABALHO = "proximo-ao-trabalho"
+    MAIS_BARATO = "mais-barato"
 
 
 
 class RespostaBooleana(str, Enum):
-    Sim = "sim"
-    Nao = "nao"
+    SIM = "sim"
+    NAO = "nao"
 
 
 class FaixaSalarial(str, Enum):
@@ -85,3 +85,10 @@ class UsuarioCadastrado(BaseModel):
     utilizacao_aplicativos: RespostaBooleana
     utilizacao_cartoes_fidelidade: RespostaBooleana
     interesse_tecnologias_propulsao: RespostaBooleana
+
+
+class Response(GenericModel, Generic[T]):
+    status: str
+    code: int
+    mensagem: Optional[T]
+    result: Optional[T]  
