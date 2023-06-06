@@ -13,6 +13,7 @@ retornarCadastros.addEventListener("click", retornarMenu)
 
 function exibirForm(){
     menuInicial.style.display = "none";
+    form.style.display = "flex"
     form.setAttribute("class", "pesquisa-form")
 }
 

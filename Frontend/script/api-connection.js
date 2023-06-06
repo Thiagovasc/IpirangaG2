@@ -14,6 +14,7 @@ submitBtn.addEventListener('click', () => {
         object[key] = value;
     });
     const json = JSON.stringify(object);
+    console.log(json)
 
     fetch('http://localhost:8000/novo', {
         method: 'POST',
@@ -24,17 +25,17 @@ submitBtn.addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => {
-        console.log(`Requisição falhou: ${data}`);
-    })
-    .catch(error => {
-        
-    }).finally(() => {
         form.style.display = "none";
         modal.style.display = "block";
         modal.setAttribute("id", "cadastros")
+        modalTitulo.innerHTML = "Requsição concluída"
+        modalMensagem.innerHTML = "Dado cadastrado com sucesso"
+    })
+    .catch(error => {
         modalTitulo.innerHTML = "Error";
         modalMensagem.innerHTML = "Requisição falhou";
-        // Delay the displaying of the initial menu for a few seconds to allow the user to read the error message
+    }).finally(() => {
+      limpandoForm()
         setTimeout(() => {
             modal.style.display = "none";
             menuInicial.style.display = "flex";
