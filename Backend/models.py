@@ -6,60 +6,91 @@ from typing import Optional, Generic, TypeVar
 T = TypeVar('T')
 
 class Genero(str, Enum):
-    MASCULINO = "Masculino"
-    FEMININO = "Feminino"
+    MASCULINO = "MASCULINO"
+    FEMININO = "FEMININO"
+
 
 
 class NivelEscolaridade(str, Enum):
-    SUPERIOR_COMPLETO = "superior-completo"
-    SUPERIOR_INCOMPLETO = "superior-incompleto"
-    ENSINO_MEDIO_COMPLETO = "medio-completo"
-    ENSINO_MEDIO_INCOMPLETO = "medio-incompleto"
-    FUNDAMENTAL_COMPLETO = "fundamental-completo"
-    FUNDAMENTAL_INCOMPLETO = "fundamental-incompleto"
-    ANALFABETO = "analfabeto"
+    SUPERIOR_COMPLETO = "SUPERIOR_COMPLETO"
+    SUPERIOR_INCOMPLETO = "SUPERIOR_INCOMPLETO"
+    ENSINO_MEDIO_COMPLETO = "ENSINO_MEDIO_COMPLETO"
+    ENSINO_MEDIO_INCOMPLETO = "ENSINO_MÉDIO_INCOMPLETO"
+    FUNDAMENTAL_COMPLETO = "FUNDAMENTAL_COMPLETO"
+    FUNDAMENTAL_INCOMPLETO = "FUNDAMENTAL_INCOMPLETO"
+    ANALFABETO = "ANALFABETO"
 
+
+
+class LocalizacaoRegional(str, Enum):
+    ACRE = 'AC'
+    ALAGOAS = 'AL'
+    AMAPA = 'AP'
+    AMAZONAS = 'AM'
+    BAHIA = 'BA'
+    CEARA = 'CA'
+    DISTRITO_FEDERAL = 'DF'
+    ESPIRITO_SANTO = 'ES'
+    GOIAS = 'GO'
+    MARANHAO = 'MA'
+    MATO_GROSSO = 'MT'
+    MATO_GROSSO_DO_SUL = 'MS'
+    MINAS_GERAIS = 'MG'
+    PARA = 'PA'
+    PARAIBA = 'PB'
+    PARANA = 'PR'
+    PERNAMBUCO = 'PE'
+    PIAUI = 'PI'
+    RIO_DE_JANEIRO = 'RJ'
+    RIO_GRANDE_DO_NORTE = 'RN'
+    RIO_GRANDE_DO_SUL = 'RS'
+    RONDONIA = 'RO'
+    RORAIMA = 'RR'
+    SANTA_CATARINA = 'SC'
+    SAO_PAULO = 'SP'
+    SERGIPE = 'SE'
+    TOCANTINS = 'TO'
 
 
 
 class SituacaoEmpregaticia(str, Enum):
-    EMPREGADO = "Empregado"
-    DESEMPREGADO = "Desempregado"
-    AUTONOMO = "Autonomo"
+    EMPREGADO = "EMPREGADO"
+    DESEMPREGADO = "DESEMPREGADO"
+    AUTONOMO = "AUTÔNOMO"
 
 
 
 class DiaDeAbastecimento(str, Enum):
-    DOMINGO = "Domingo"
-    SEGUNDA = "Segunda"
-    TERCA = "Terca"
-    QUARTA = "Quarta"
-    QUINTA = "Quinta"
-    SEXTA = "Sexta"
-    SABADO = "Sabado"
-    CONFORME_NECESSIDADE = "Conforme-necessidade"
+    DOMINGO = "DOMINGO"
+    SEGUNDA = "SEGUNDA"
+    TERCA = "TERCA"
+    QUARTA = "QUARTA"
+    QUINTA = "QUINTA"
+    SEXTA = "SEXTA"
+    SABADO = "SABADO"
+    CONFORME_NECESSIDADE = "CONFORME_NECESSIDADE"
 
 
 
 
 class LocalDeAbastecimento(str, Enum):
-    PROXIMO_DE_CASA = "proximo-de-casa"
-    PROXIMO_AO_TRABALHO = "proximo-ao-trabalho"
-    MAIS_BARATO = "mais-barato"
+    PROXIMO_DE_CASA = "PROXIMO_DE_CASA"
+    PROXIMO_AO_TRABALHO = "PROXIMO_AO_TRABALHO"
+    LOCAL_MAIS_BARATO = "LOCAL_MAIS_BARATO"
 
 
 
 class RespostaBooleana(str, Enum):
-    SIM = "sim"
-    NAO = "nao"
+    SIM = "SIM"
+    NAO = "NÃO"
 
 
 class FaixaSalarial(str, Enum):
-    ATE_1_SALARIO = "ate-1-salario"
-    ENTRE_1_E_2_SALARIOS = "entre-1-e-2"
-    ENTRE_2_E_3_SALARIOS = "entre-2-e-3"
-    ENTRE_3_E_4_SALARIOS = "entre-3-e-4"
-    ACIMA_DE_4_SALARIOS = "acima-de-4"
+    ATE_1_SALARIO = "ATE_1_SALARIO"
+    ENTRE_1_E_2_SALARIOS = "ENTRE_1_E_2_SALARIOS"
+    ENTRE_2_E_3_SALARIOS = "ENTRE_2_E_3_SALARIOS"
+    ENTRE_3_E_4_SALARIOS = "ENTRE_3_E_4_SALARIOS"
+    ACIMA_DE_4_SALARIOS = "ACIMA_DE_4_SALARIOS"
 
 
 
@@ -68,7 +99,7 @@ class UsuarioCadastrado(BaseModel):
     sobrenome: str
     genero: Genero
     idade: int
-    estado: str
+    estado: LocalizacaoRegional
     faixa_salarial: FaixaSalarial
     escolaridade: NivelEscolaridade
     profissao: str
