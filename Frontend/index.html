@@ -89,8 +89,8 @@
                 <label for="genero">Gênero:</label>
                 <select name="genero" id="genero-select" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Feminino">Feminino</option>
+                    <option value="MASCULINO">Masculino</option>
+                    <option value="FEMININO">Feminino</option>
                 </select>
             </div>
               
@@ -140,19 +140,18 @@
                     <option value="SP">São Paulo</option>
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
-                    <option value="EX">Estrangeiro</option>
                 </select>
             </div>
 
             <div class="pergunta">
-                <label for="faixa-salarial">Faixa salarial:</label>
-                <select name="faixa-salarial" id="faixa-salarial">
+                <label for="faixa_salarial">Faixa salarial:</label>
+                <select name="faixa_salarial" id="faixa-salarial">
                     <option value="" disabled="disabled" selected="true" hidden>Selecione uma opção</option> 
-                    <option value="ate-1-salario">Até 1 salário</option>
-                    <option value="entre-1-e-2">Acima de 1, até 2 salários</option>
-                    <option value="entre-2-e-3">Acima de 2, até 3 salários </option>
-                    <option value="entre-3-e-4">Acima de 3, até 4 salários </option>
-                    <option value="acima-de-4">Acima de 4 salários</option>
+                    <option value="ATE_1_SALARIO">Até 1 salário</option>
+                    <option value="ENTRE_1_E_2">Acima de 1, até 2 salários</option>
+                    <option value="ENTRE_2_E_3">Acima de 2, até 3 salários </option>
+                    <option value="ENTRE_3_E_4">Acima de 3, até 4 salários </option>
+                    <option value="ACIMA_DE_4">Acima de 4 salários</option>
                 </select>
             </div>
 
@@ -160,13 +159,13 @@
                 <label for="escolaridade">Nivel de escolaridade:</label>
                 <select name="escolaridade" id="escolaridade">
                     <option value="" disabled="disabled" selected="true" hidden>Selecione uma opção</option>                  
-                    <option value="superior-completo">Superior completo</option>
-                    <option value="superior-incompleto">Superior incompleto</option>
-                    <option value="medio-completo">Médio completo</option>
-                    <option value="medio-incompleto">Médio incompleto</option>
-                    <option value="fundamental-completo">Fundamental completo</option>
-                    <option value="fundamental-incompleto">Fundamental incompleto</option>
-                    <option value="analfabeto">Analfabeto</option>
+                    <option value="SUPERIOR_COMPLETO">Superior completo</option>
+                    <option value="SUPERIOR_INCOMPLETO">Superior incompleto</option>
+                    <option value="MEDIO_COMPLETO">Médio completo</option>
+                    <option value="MEDIO_INCOMPLETO">Médio incompleto</option>
+                    <option value="FUNDAMENTAL_COMPLETO">Fundamental completo</option>
+                    <option value="FUNDAMENTAL_INCOMPLETO">Fundamental incompleto</option>
+                    <option value="ANALFABETO">Analfabeto</option>
                 </select>
             </div>
 
@@ -189,9 +188,9 @@
                 <label for="situacao-trabalho">Qual é a sua situação de trabalho atual?</label>
                 <select name="situacao_trabalho" id="situacao-trabalho" required>
                     <option value="" disabled selected hidden>Selecione uma opção</option>
-                    <option value="Empregado">Empregado</option>
-                    <option value="Desempregado">Desempregado</option>
-                    <option value="Autonomo">Autônomo</option>
+                    <option value="EMPREGADO">Empregado</option>
+                    <option value="DESEMPREGADO">Desempregado</option>
+                    <option value="AUTONOMO">Autônomo</option>
                 </select>
             </div>
             <div class="pergunta">
@@ -202,14 +201,14 @@
                 <label for="dia-abastecimento">Qual dia da semana abastece?</label>
                 <select name="dia_abastecimento" id="dia-abastecimento" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="Segunda">Segunda</option>
-                    <option value="Terca">Terça</option>
-                    <option value="Quarta">Quarta</option>
-                    <option value="Quinta">Quinta</option>
-                    <option value="Sexta">Sexta</option>
-                    <option value="Sabado">Sabado</option>
-                    <option value="Domingo">Domingo</option>
-                    <option value="Conforme-necessidade">Conforme necessidade</option>
+                    <option value="SEGUNDA">Segunda</option>
+                    <option value="TERCA">Terça</option>
+                    <option value="QUARTA">Quarta</option>
+                    <option value="QUINTA">Quinta</option>
+                    <option value="SEXTA">Sexta</option>
+                    <option value="SABADO">Sabado</option>
+                    <option value="DOMINGO">Domingo</option>
+                    <option value="CONFORME_NECESSIDADE">Conforme necessidade</option>
                 </select>
             </div>
 
@@ -226,9 +225,9 @@
                 <label for="locais-abastecimento">Qual o local você costuma abastecer?</label>
                 <select name="locais_abastecimento" id="locais-abastecimento">
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="proximo-de-casa">Próximo de casa</option>
-                    <option value="proximo-ao-trabalh">Próximo ao trabalho</option>
-                    <option value="mais-barato">Local mais barato</option>
+                    <option value="PROXIMO_DE_CASA">Próximo de casa</option>
+                    <option value="PROXIMO_AO_TRABALHO">Próximo ao trabalho</option>
+                    <option value="LOCAL_MAIS_BARATO">Local mais barato</option>
                 </select>
         
             </div>    
@@ -241,15 +240,14 @@
                     <option value="Etanol">Etanol</option>
                     <option value="Diesel">Diesel</option>
                     <option value="GNV">GNV</option>
-                    <option value=""></option>
                 </select>
                 </div>
                 <div class="pergunta">
                 <label for="manutencao-preventiva">O consumidor costuma realizar a manutenção preventiva do veículo?</label>
                 <select name="manutencao_preventiva" id="manutencao-preventiva" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
+                    <option value="SIM">Sim</option>
+                    <option value="NAO">Não</option>
                </select>
             </div>
 
@@ -266,24 +264,24 @@
                 <label for="preocupacao-ambiental">O consumidor está preocupado com questões ambientais e busca opções mais sustentáveis de combustível?</label>
                 <select name="preocupacao_ambiental" id="preocupacao-ambiental" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
+                    <option value="SIM">Sim</option>
+                    <option value="NAO">Não</option>
                </select>
             </div>
             <div class="pergunta">
                 <label for="valorizacao-economia-combustivel">O consumidor valoriza a economia de combustível e procura por opções mais eficientes?</label>
                 <select name="valorizacao_economia_combustivel" id="economia-combustivel" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="sim">Sim, busco o mais eficiente</option>
-                    <option value="nao">Não, busco o mais barato</option>
+                    <option value="SIM">Sim, busco o mais eficiente</option>
+                    <option value="NAO">Não, busco o mais barato</option>
                </select>
             </div>
             <div class="pergunta">
                 <label for="preferencia-marca-combustivel">O consumidor tem preferência por alguma marca de combustível em particular?</label>
                 <select name="preferencia_marca_combustivel" id="marca-combustivel">
                     <option value="" disabled="disabled" selected="true" hidden>Selecione uma opção</option> 
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
+                    <option value="SIM">Sim</option>
+                    <option value="NAO">Não</option>
                 </select>
             </div>
 
@@ -293,8 +291,8 @@
                 <label for="pagamento-combustivel-qualidade">O consumidor está disposto a pagar mais por um combustível de maior qualidade?</label>
                 <select name="pagamento_combustivel_qualidade" id="combustivel-qualidade" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
+                    <option value="SIM">Sim</option>
+                    <option value="NAO">Não</option>
                </select>
             </div>
 
@@ -311,24 +309,24 @@
                 <label for="utilizacao-aplicativos">O consumidor utiliza aplicativos ou plataformas online para localizar postos de combustível ou comparar preços?</label>
                 <select name="utilizacao_aplicativos" id="utilizacao-aplicativos" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
+                    <option value="SIM">Sim</option>
+                    <option value="NAO">Não</option>
                </select>
             </div>
             <div class="pergunta">
                 <label for="utilizacao-cartoes-fidelidade">O consumidor utiliza cartões de fidelidade ou programas de recompensa oferecidos por postos de combustível?</label>
                <select name="utilizacao_cartoes_fidelidade" id="cartoes-fidelidade" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
+                    <option value="SIM">Sim</option>
+                    <option value="NAO">Não</option>
                </select>
             </div>
             <div class="pergunta">
                 <label for="interesse-tecnologias-propulsao">O consumidor está interessado em novas tecnologias de propulsão, como veículos elétricos ou híbridos?</label>
                 <select name="interesse_tecnologias_propulsao" id="tecnologias-propulsao" required>
                     <option value="" selected="true" disabled="disabled" hidden>Selecione uma opção</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
+                    <option value="SIM">Sim</option>
+                    <option value="NAO">Não</option>
                 </select>
             </div>
 
