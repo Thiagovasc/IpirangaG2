@@ -3,6 +3,7 @@ from faker import Faker
 from unidecode import unidecode
 import requests
 from typing import List
+from gerando_csv import gerando_csv
 
 fake = Faker("pt_BR")
 
@@ -16,20 +17,17 @@ def gerar_cadastros_randomicos():
         nome = fake.first_name_female()
 
     sobrenome=fake.last_name(),
-    estado=fake.state()
     profissao=fake.job()
     nome = unidecode(str(nome))
     sobrenome = unidecode(str(sobrenome)).replace("('", "").replace("',)", "")
-    profissao = unidecode(str(profissao))
-    estado = unidecode(str(estado))
-    
+    profissao = unidecode(str(profissao))    
     
     usuario = UsuarioCadastrado(
         nome=nome,
         sobrenome=sobrenome,
         genero=genero,  
         idade=fake.random_int(min=18, max=50),
-        estado=estado,
+        estado=fake.random_element(LocalizacaoRegional),
         faixa_salarial=fake.random_element(FaixaSalarial),
         escolaridade=fake.random_element(NivelEscolaridade),
         profissao=profissao,
@@ -75,7 +73,9 @@ def adiciona_cadastros(n):
                 code = code,
                 mensagem = f"Erro: {error}"
             )
-
+    
+    gerando_csv(cadastros_gerados)
+    
     return Response(
         status = reason,
         code = code,
